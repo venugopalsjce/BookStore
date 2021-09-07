@@ -2,6 +2,7 @@
 using BookStore.API.Dtos.Category;
 using BookStore.Domain.Interfaces;
 using BookStore.Domain.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 namespace BookStore.API.Controllers
 {
     [Route("api/[controller]")]
+
     public class CategoriesController : MainController
     {
         private readonly ICategoryService _categoryService;

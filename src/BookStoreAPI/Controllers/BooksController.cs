@@ -2,6 +2,7 @@
 using BookStore.API.Dtos.Book;
 using BookStore.Domain.Interfaces;
 using BookStore.Domain.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 namespace BookStore.API.Controllers
 {
     [Route("api/[controller]")]
+
     public class BooksController : MainController
     {
         private readonly IBookService _bookService;
